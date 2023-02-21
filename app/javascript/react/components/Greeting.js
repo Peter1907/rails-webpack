@@ -8,7 +8,9 @@ const Greeting = () => {
 
   useEffect(() => {
     dispatch(greet());
-  }, [dispatch]);
+    console.log('Greeting mounted');
+    console.log(greeting);
+  }, []);
 
   return (
     <div className="greeting">
